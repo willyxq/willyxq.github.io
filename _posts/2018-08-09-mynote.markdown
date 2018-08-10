@@ -251,12 +251,12 @@ $$
 or 
 
 $$
-\color{red} {<u_{n-1}|u_n> =\sum \eta_{n-1}^{\alpha*} \eta_0^\alpha  e^{i\phi_0} \exp[-i(k_{0}-k_{n-1} + G) d_\alpha] = < \tilde \eta_{n-1}| e^{i\phi_0} \Lambda_G|\tilde \eta_0 >}
+\color{blue} {<u_{n-1}|u_n> =\sum \eta_{n-1}^{\alpha*} \eta_0^\alpha  e^{i\phi_0} \exp[-i(k_{0}-k_{n-1} + G) d_\alpha] = < \tilde \eta_{n-1}|  \Lambda_G|\tilde \eta_0 > + \phi_0}
 $$
 
 and 
 
-$k_n - G = k_0$
+$$k_n - G = k_0$$
 
 $$
 \eta_n e^{-i\phi_0} = \eta_0
