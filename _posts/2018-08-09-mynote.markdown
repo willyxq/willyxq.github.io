@@ -67,14 +67,18 @@ $$
 
 
 If $A_t (k + G) = A_t (k)$ , then 
+
 $$
 \int dk\Omega_{kt}   =-\frac{\partial }{\partial t }  \int dk A_k
 $$
+
 In this 1D system, the condition means keeping the periodic boundary condition: phase $\phi_k$ does not depend on $t$. 
 $$
 u_{k+G }(r;t) = e^{-iGr}  u_k(r;t) e^{i\phi_G}
 $$
+
 we have the polarization definition 
+
 $$
 P = \frac{e}{2\pi} \int dk A_k
 $$
@@ -88,6 +92,7 @@ P(T)- P(0) = - \int j  \cdot dt =-\frac{e}{2\pi} \int dkdt\cdot \Omega_{kt} =  -
 $$
 
 For 2D, the phase factor has two component, 
+
 $$
 \left [
 \begin{array}{cc}
@@ -96,7 +101,9 @@ $$
 \end{array}
 \right]
 $$
+
 On the boundary it is 
+
 $$
 \left [
 \begin{array}{cc}
@@ -105,15 +112,21 @@ $$
 \end{array}
 \right]
 $$
+
 A proper definition for polarzation in 1D along $x$ direction requires 
+
 $$
 \phi_{x} = \phi_{x} (k_x,\cancel {k_y})  , \ \ \ \ \ \forall k_y \in [-\pi,\pi]
 $$
+
 in the continum condition. For the boundary with $k_x =0$, that is 
+
 $$
 \phi_{x} (0,\cancel {k_y} ) = \text{constant} \equiv \phi_0
 $$
+
 This is almost a Berry phase, excep the begin and end wavefunction are different. 
+
 $$
 u_{G} (r)= e^{i\phi_0}e^{-iGr}u_{0}(r)
 $$
