@@ -5,7 +5,7 @@ math: true
 date:   2018-08-09 22:37:04 -0500
 categories: jekyll update
 ---
-The physical quantity is the Chern number, 
+The physical quantity is the Chern number, which represents the Hall conductivity, 
 
 $$ n = \frac{1}{2\pi} \int \Omega_{xy} dk^2, $$
 
@@ -27,7 +27,7 @@ the Berry connnection is not periodic,
 
 $$ A_{k+G} = A_k - \partial_k \phi_G$$
 
-  
+
 The chern number is, due to phase uncertainty is $2\pi Z$. 
 
 $$
