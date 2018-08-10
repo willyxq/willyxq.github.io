@@ -6,13 +6,19 @@ date:   2018-08-09 22:37:04 -0500
 categories: jekyll update
 ---
 The physical quantity is $$ \Omega_{xy}$$, 
+
+
 $$
 n = \frac{1}{2\pi} \int \Omega_{xy} dk^2
 $$
+
+
 where the definition of 
+
 $$
 \Omega_{xy} = i<\partial _x u|\partial _y u> -  i<\partial _y u|\partial _x u>
 $$
+
 In area with boundary C, 
 
 
