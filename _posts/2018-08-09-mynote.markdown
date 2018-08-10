@@ -18,12 +18,14 @@ $$
 In area with boundary C, Stoke's theorem has
 
 $$
-\int \Omega_{xy} dk^2 = \oint_C A  \cdot dk.
+\int \Omega_{xy} dk^2 = \oint_C A_k  \cdot dk.
 $$
 
 The connection is, $$ A _k= i <u | \partial_k u> $$.
-Since $$ u_{k+G }(r) = e^{i\phi_G(k)}e^{-iGr}  u_k(r) $$
-the Berry connnection $$ A_{k+G} = A_k - \partial_k \phi_G$$
+Since $$ u_{k+G }(r) = e^{i\phi_G(k)}e^{-iGr}  u_k(r) $$,
+the Berry connnection is not periodic,
+
+$$ A_{k+G} = A_k - \partial_k \phi_G$$
 
   
 The chern number is, due to phase uncertainty is $2\pi Z$. 
@@ -116,54 +118,73 @@ $$
 u_{G} (r)= e^{i\phi_0}e^{-iGr}u_{0}(r)
 $$
 
-### 
-
-#### TB model
+### TB model
 
 The tight bind basis
+
 $$
 c^\dagger_k = \frac{1}{\sqrt N} \sum \exp^{ikR_i} c_i^\dagger
 $$
+
 Or 
+
 $$
 \phi_k^\alpha(r) = \frac{1}{\sqrt N } \sum \exp(ikR_i) \delta (r - R_i -d_\alpha)
 $$
+
 The Bloch wavefunction
+
 $$
 \psi_k(r) = \sum \eta_k^\alpha \phi_k^\alpha(r) =   \frac{1}{\sqrt N } \sum \eta_k^\alpha \exp(ikR_i) \delta (r - R_i -d_\alpha)
 $$
+
 which satisfies
+
 $$
 \psi_k(r+a) = e^{ika} \psi_k(r)
 $$
+
 The periodic part is 
 $$
 u_k(r) = e(-ikr) \psi_k(r) =\frac{1}{\sqrt N } \sum \eta_k^\alpha \exp[-ik(r-R_i)] \delta (r - R_i -d_\alpha)
 $$
+
 Or 
+
 $$
 u_k(r) =\frac{1}{\sqrt N } \sum \eta_k^\alpha \exp[-ik d_\alpha] \delta (r - R_i -d_\alpha)
 $$
+
 The priodic contraint is 
+
 $$
 \psi_{k+G } (r)   = e^{i\phi_k} \psi_k(r)
 $$
+
 Or 
+
 $$
 u_{k+G }(r) = e^{i\phi_k}e^{-iGr}  u_k(r)
 $$
+
 Since $\eta_{k+G} = e^{i\phi_G(k)} \eta_k$,
+
 $$
 L.H.S = e^{i\phi_G}\frac{1}{\sqrt N } \sum \eta_{k}^\alpha \exp[-i(k+G) d_\alpha] \delta (r - R_i -d_\alpha)
 $$
+
 while
+
 $$
 R.H.S = e^{i\phi_G}\frac{1}{\sqrt N } \sum \eta_k^\alpha \exp[-ik d_\alpha - iGr]  \delta (r - R_i -d_\alpha)
 $$
+
 Or 
+
 $$
 R.H.S =  e^{i\phi_G}\frac{1}{\sqrt N } \sum \eta_k^\alpha \exp[-i(k+G) d_\alpha]  \delta (r - R_i -d_\alpha) = L.H.S
 $$
+
 And the phase $\phi_G(k)$ is from $\eta_k$ . 
 
 
@@ -171,26 +192,37 @@ And the phase $\phi_G(k)$ is from $\eta_k$ .
 ### The Berry phase or Zak phase
 
 Since
+
 $$
 u_{k+G }(r) = e^{i\phi_G}e^{-iGr}  u_k(r)
 $$
+
 the Zak phase along one direction in k space is 
+
 $$
 \Phi = - i \log(<u_0|u_1> <u_1|u_2> \dots <u_{n-1}|  u_n>)
 $$
+
 or 
+
 $$
 \Phi = - i \log(<u_0|u_1> <u_1|u_2> \dots <u_{n-1}|  e^{i\phi_0}e^{-iGr} |u_0>)
 $$
+
 Using 
+
 $$
 u_k(r) =\frac{1}{\sqrt N } \sum \eta_k^\alpha \exp[-ik d_\alpha] \delta (r - R_i -d_\alpha) = \frac{1}{\sqrt N } \sum \tilde \eta_k^\alpha \delta (r - R_i -d_\alpha)
 $$
+
 where 
+
 $$
 \tilde \eta ^\alpha_k  =  \eta^\alpha _ke^{-ikd_\alpha}
 $$
+
 We have 
+
 $$
 <u_0|u_1> = \sum \eta_0^{\alpha*} \eta_1^\alpha \exp[-i(k_1-k_0) d_\alpha] = <\tilde \eta_0 | \tilde \eta_1>
 $$
@@ -204,26 +236,36 @@ $$
 $$
 
 or 
+
 $$
 \color{red} {<u_{n-1}|u_n> =\sum \eta_{n-1}^{\alpha*} \eta_0^\alpha  e^{i\phi_0} \exp[-i(k_{0}-k_{n-1} + G) d_\alpha] = < \tilde \eta_{n-1}| e^{i\phi_0} \Lambda_G|\tilde \eta_0 >}
 $$
-and $k_n - G = k_0$
+
+and 
+
+$k_n - G = k_0$
+
 $$
 \eta_n e^{-i\phi_0} = \eta_0
 $$
+
 which needs to be kept for any t ($k_y$). In numerical diagonalization, $\phi_0$ may change with t ($k_y$). So just use the one with $\eta_0$. 
 
 Therefore 
+
 $$
 \Phi = - i \log(<\tilde \eta_0|\tilde \eta_1> <\tilde \eta_1|\tilde \eta_2> \dots <\tilde \eta_{n-1}|\tilde \eta_n>)
 $$
 
 
 Note 
+
 $$
 \tilde \eta _k  =   \Lambda _k\eta _k
 $$
+
 with 
+
 $$
 \Lambda_k = 
 \left(
@@ -246,6 +288,7 @@ $$
 $$
 
 Or 
+
 $$
 \Phi = - i \log[Tr(\Lambda_0^\dagger \Lambda_1| \eta_1> <  \eta_1| \Lambda_1^\dagger \Lambda_2|  \eta_2> \dots < \eta_{n-1}|\Lambda_{n-1}^\dagger \Lambda_n|  \eta_n><\eta_0|)]
 $$
@@ -257,13 +300,17 @@ $$
 
 
 For 2D case, $\phi_0$ is contant for any $k_y$; thus often ignored in calcuating 
+
 $$
 c = \frac{1}{2\pi} [\Phi (k_y = \pi) - \Phi (k_y = -\pi)]
 $$
+
 In case $d_\alpha = d_0$ 
+
 $$
 \Phi = - i \log(< \eta_0|  \eta_1> <  \eta_1|  \eta_2> \dots < \eta_{n-1}| \eta_0>)
 $$
+
 Comments
 
 1. $\phi_0$ has uncertainty of $2\pi$. It is chosen as along as the smooth condition is satisified. In 1D, this phase factor can always be $\phi_0= 0$. 
