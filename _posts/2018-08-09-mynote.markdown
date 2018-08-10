@@ -15,7 +15,7 @@ $$
 \Omega_{xy} = i<\partial _x u|\partial _y u> -  i<\partial _y u|\partial _x u>.
 $$
 
-In area with boundary C, Stoke's theorem has
+In area with boundary C, Stoke's theorem gives
 
 $$
 \int \Omega_{xy} dk^2 = \oint_C A_k  \cdot dk.
