@@ -5,60 +5,39 @@ math: true
 date:   2018-08-09 22:37:04 -0500
 categories: jekyll update
 ---
-The physical quantity is $$ \Omega_{xy}$$, 
+The physical quantity is the Chern number, 
 
+$$ n = \frac{1}{2\pi} \int \Omega_{xy} dk^2, $$
 
-$$
-n = \frac{1}{2\pi} \int \Omega_{xy} dk^2
-$$
-
-
-where the definition of 
+where the definition of Berry curvature is
 
 $$
-\Omega_{xy} = i<\partial _x u|\partial _y u> -  i<\partial _y u|\partial _x u>
+\Omega_{xy} = i<\partial _x u|\partial _y u> -  i<\partial _y u|\partial _x u>.
 $$
 
-In area with boundary C, 
-
-
-$$
-\int \Omega_{xy} dk^2 = \oint_C A  \cdot dk
-$$
-
-
-The connection $A$ is defined
-
+In area with boundary C, Stoke's theorem has
 
 $$
-A _k= i <u | \partial_k u>
+\int \Omega_{xy} dk^2 = \oint_C A  \cdot dk.
 $$
 
+The connection is, $$ A _k= i <u | \partial_k u> $$.
+Since $$ u_{k+G }(r) = e^{i\phi_G(k)}e^{-iGr}  u_k(r) $$
+the Berry connnection $$ A_{k+G} = A_k - \partial_k \phi_G$$
 
-Since 
+  
+The chern number is, due to phase uncertainty is $2\pi Z$. 
 
-
-$$
-u_{k+G }(r) = e^{i\phi_G(k)}e^{-iGr}  u_k(r)
-$$
-the Berry connnection 
-$$
-A_{k+G} = A_k - \partial_k \phi_G
-$$
-
-
-![torus.pdf](../../../../Downloads/0907.2021/fig/torus.pdf)
-
-
-
-The chern number is , due to phase uncertainty is $2\pi Z$. 
 $$
 n = \frac{1}{2\pi} ( \theta_x(1)-\theta_x(0)  + \theta_y(0)-\theta_y(1)) \in Z
 $$
+
 The relation to phase connections are,
+
 $$
 \theta_x (x)= \phi_y(x,0), \theta_y  = \phi_x(0,y)
 $$
+
 Note the factor 
 $$
 e^{-iGr}
