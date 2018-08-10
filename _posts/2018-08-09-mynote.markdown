@@ -14,14 +14,24 @@ $$
 \Omega_{xy} = i<\partial _x u|\partial _y u> -  i<\partial _y u|\partial _x u>
 $$
 In area with boundary C, 
+
+
 $$
 \int \Omega_{xy} dk^2 = \oint_C A  \cdot dk
 $$
+
+
 The connection $A$ is defined
+
+
 $$
 A _k= i <u | \partial_k u>
 $$
+
+
 Since 
+
+
 $$
 u_{k+G }(r) = e^{i\phi_G(k)}e^{-iGr}  u_k(r)
 $$
