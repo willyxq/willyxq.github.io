@@ -15,7 +15,7 @@ $$
 \Omega_{xy} = i<\partial _x u|\partial _y u> -  i<\partial _y u|\partial _x u>.
 $$
 
-In area with boundary C, Stoke's theorem has
+In area with boundary C, Stoke's theorem gives
 
 $$
 \int \Omega_{xy} dk^2 = \oint_C A_k  \cdot dk.
@@ -346,7 +346,7 @@ $$
 
 
 
-https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.82.1959
+[1. https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.82.1959](https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.82.1959)
 
-https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.62.2747
+[2. https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.62.2747](https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.62.2747)
 
